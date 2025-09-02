@@ -1,2 +1,2 @@
-# bmei5.github.io
+# technoqaz1.io
 Fall 2025

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --nav-height: 5rem;
+  --nav-bg: rgba(0, 0, 0, 0.75);
+  --accent-color: rgba(73, 116, 156, 0.85);
+  --accent-hover: rgb(100, 150, 200);
+}
+
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-image: url("../images/darkbg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #f8f8f8;
+}
+
+html {
+  overflow-y: scroll; 
+}
+
+* {
+  box-sizing: border-box; 
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  background: var(--nav-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.5rem;                
+  height: 2.8rem;              
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border-radius: 50px;
+  background-color: var(--accent-color);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--accent-hover);
+  transform: scale(1.05);
+}
+
+/* Main (Fixed Layout) */
+main {
+  width: 900px;
+  padding: calc(var(--nav-height) + 2rem) 2rem 2rem;
+  margin: 0 auto 3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+  box-shadow: 0 0.6rem 1.4rem rgba(0, 0, 0, 0.8);
+}
+
+
+h1, h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}

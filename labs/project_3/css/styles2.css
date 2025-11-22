@@ -7,7 +7,6 @@
   --accent-hover: rgb(100, 150, 200);
 }
 
-
 body {
   font-family: 'Roboto', Arial, sans-serif;
   background-image: url("../images/darkbg3.jpg");
@@ -21,13 +20,12 @@ body {
 }
 
 html {
-  overflow-y: scroll; 
+  overflow-y: scroll;
 }
 
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
-
 
 header {
   position: fixed;
@@ -41,6 +39,12 @@ header {
   align-items: center;
   z-index: 1000;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.7);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 nav ul {
@@ -62,8 +66,8 @@ nav a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 8.5rem;              
-  height: 2.8rem;             
+  width: 8.5rem;
+  height: 2.8rem;
   text-decoration: none;
   font-weight: 700;
   font-size: 1.1rem;
@@ -79,7 +83,18 @@ nav a:focus {
   transform: scale(1.05);
 }
 
+#questionsBtn {
+  margin-left: 1rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 0.6rem;
+  border: none;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
 
+/* Main (Fixed) */
 main {
   width: 960px;
   padding: calc(var(--nav-height) + 2rem) 2rem 2rem;
@@ -89,7 +104,6 @@ main {
   box-shadow: 0 0.6rem 1.4rem rgba(0, 0, 0, 0.8);
   text-align: center;
 }
-
 
 h1, h2 {
   color: #ffffff;
@@ -101,7 +115,6 @@ p {
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
-
 
 img, iframe {
   display: block;

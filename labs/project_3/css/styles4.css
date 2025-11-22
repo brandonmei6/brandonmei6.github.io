@@ -1,0 +1,14 @@
+#wrapper {
+    width: 800px;
+    height: 600px;
+    background-color: grey;
+    margin: auto;
+    overflow: hidden;
+}
+
+#canvas {
+  width: 600px;
+  height: 400px;
+  background: #eee;
+  margin: 20px auto;
+}
